@@ -20,7 +20,6 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <p>&copy; 2024 Focus MediaTech. All rights reserved.</p>
-          <p>Built with React, TypeScript, Framer Motion & SCSS</p>
         </div>
       </footer>
     </div>
