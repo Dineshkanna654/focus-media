@@ -1,5 +1,5 @@
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { useRef, useState, MouseEvent } from 'react';
+import { useRef, useState, type MouseEvent } from 'react';
 import { Code2, Smartphone, Palette, Server, Rocket, Wrench } from 'lucide-react';
 import styles from './Services.module.scss';
 

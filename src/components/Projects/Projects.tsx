@@ -1,5 +1,5 @@
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { useRef, useState, MouseEvent } from 'react';
+import { useRef, useState, type MouseEvent } from 'react';
 import styles from './Projects.module.scss';
 
 const projects = [
