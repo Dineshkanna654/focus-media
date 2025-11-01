@@ -1,0 +1,206 @@
+.contact {
+  padding: 8rem 2rem;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f0f 100%);
+  position: relative;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subheading {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: #b8b8b8;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+
+    @media (max-width: 968px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .info {
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    > p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b8b8b8;
+      margin-bottom: 3rem;
+    }
+
+    .contactCards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+
+      .contactCard {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(102, 126, 234, 0.1);
+          border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .cardIcon {
+          font-size: 2rem;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          border-radius: 12px;
+          flex-shrink: 0;
+        }
+
+        h4 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #ffffff;
+          margin-bottom: 0.25rem;
+        }
+
+        p,
+        a {
+          font-size: 0.95rem;
+          color: #b8b8b8;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        a:hover {
+          color: #667eea;
+        }
+      }
+    }
+
+    .social {
+      h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+      }
+
+      .socialLinks {
+        display: flex;
+        gap: 1rem;
+
+        .socialLink {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          font-size: 1.5rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: transparent;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    .formGroup {
+      margin-bottom: 2rem;
+
+      label {
+        display: block;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-family: inherit;
+        transition: all 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #667eea;
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        &::placeholder {
+          color: #6a6a6a;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+    }
+
+    .submitBtn {
+      width: 100%;
+      padding: 1.25rem 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+
+      &:hover {
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+      }
+    }
+  }
+}
